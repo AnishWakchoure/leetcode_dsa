@@ -21,6 +21,7 @@ public:
             }
         }
         
+        //The verification block is only needed when majority is NOT guaranteed.
         //Verify candidate - Majority exists
         int count = 0;
         for(int i : nums){
