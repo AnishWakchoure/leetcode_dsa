@@ -1,3 +1,15 @@
+#BEST APPROACH
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        for i in range(len(digits)-1, -1, -1):
+            if digits[i] < 9:
+                digits[i] += 1
+                return digits   # return directly if last digit aint 9 (less than 9)
+            digits[i] = 0
+        return [1] + digits     #add 1 in the start cuz of carryover
+
+
+#WHAT I INITIALLY THOUGHT
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         num = 0
